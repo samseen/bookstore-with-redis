@@ -19,7 +19,7 @@ public class BookController {
         return dao.save(book);
     }
 
-    @GetMapping("/")
+    @GetMapping
     public List<Book> getAllBooks() {
         return dao.findAll();
     }
